@@ -75,7 +75,22 @@ header h1 { font-size: 1.6rem; color: var(--text-main); display: flex; gap: 10px
 
 /* Filters */
 .filter-section { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
-.filter-btn { background: none; border: none; color: var(--text-muted); cursor: pointer; font-weight: 600; padding: 5px 10px; border-radius: 6px; }
+
+/* FIX APPLIED HERE: Added flexbox to align the new icons and text perfectly */
+.filter-btn { 
+    background: none; 
+    border: none; 
+    color: var(--text-muted); 
+    cursor: pointer; 
+    font-weight: 600; 
+    padding: 5px 10px; 
+    border-radius: 6px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 6px; 
+}
+
 .filter-btn.active { background: var(--primary-color); color: white; }
 
 /* Task Items */
