@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Task Manager</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="todo-container">
+        
         <header>
-            <h1><i class="fa-solid fa-layer-group"></i> TaskList</h1>
+            <h1><i class="fa-solid fa-clipboard-check"></i> TaskList</h1>
             <button id="themeToggle" aria-label="Toggle Dark Mode">
                 <i class="fa-solid fa-moon"></i>
             </button>
@@ -18,7 +21,7 @@
         
         <section class="stats-section">
             <div class="stats-header">
-                <span>Task Progress</span>
+                <span><i class="fa-solid fa-chart-line"></i> Task Progress</span>
                 <span id="progressText">0%</span>
             </div>
             <div class="progress-bar-container">
@@ -28,20 +31,28 @@
 
         <section class="input-section">
             <input type="text" id="taskInput" placeholder="What needs to be done?" aria-label="New task input">
+            
             <select id="prioritySelect" aria-label="Task Priority">
                 <option value="low">Low</option>
                 <option value="medium" selected>Med</option>
                 <option value="high">High</option>
             </select>
+            
             <button id="addTaskBtn" aria-label="Add Task">
                 <i class="fa-solid fa-plus"></i>
             </button>
         </section>
 
         <section class="filter-section">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="active">Active</button>
-            <button class="filter-btn" data-filter="completed">Completed</button>
+            <button class="filter-btn active" data-filter="all">
+                <i class="fa-solid fa-list-ul"></i> All
+            </button>
+            <button class="filter-btn" data-filter="active">
+                <i class="fa-solid fa-bolt"></i> Active
+            </button>
+            <button class="filter-btn" data-filter="completed">
+                <i class="fa-solid fa-check-double"></i> Completed
+            </button>
         </section>
 
         <ul id="taskList" class="task-list"></ul>
